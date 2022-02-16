@@ -75,3 +75,16 @@
 .header .inner-header .nav .gnb>ul>li:hover ul.sub {
   display: block;
 }
+
+@media only screen and (max-width:800px) {
+
+
+
+}
+
+@media only screen and (max-width:640px) {
+  .header .inner-header .nav .gnb{
+    display: none;
+  }
+
+}
