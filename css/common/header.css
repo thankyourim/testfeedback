@@ -1,0 +1,77 @@
+/* header */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.header .inner-header {
+  display: flex;
+  justify-content: center;
+}
+
+.header .inner-header .nav {
+  flex: 0 1 1400px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid; */
+  padding: 25px 0;
+}
+
+.header .inner-header .nav h1.logo {
+  flex: 0 0 100px;
+
+}
+
+.header .inner-header .nav h1.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header .inner-header .nav .gnb {
+  flex: 0 1 600px;
+  /* border: 1px solid; */
+
+}
+
+.header .inner-header .nav .gnb>ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header .inner-header .nav .gnb>ul>li {
+  position: relative;
+  line-height: 50px;
+  /* border: 1px solid; */
+  text-align: center;
+  flex:1;
+}
+.header .inner-header .nav .gnb>ul>li a{
+  padding: 0 10px;
+}
+.header .inner-header .nav .gnb>ul>li ul.sub {
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: #555;
+}
+.header .inner-header .nav .gnb>ul>li ul.sub>li{
+  line-height: 30px;
+  text-align: center;
+}
+.header .inner-header .nav .gnb>ul>li ul.sub>li:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.header .inner-header .nav .gnb>ul>li ul.sub>li:hover a{
+  color: inherit;
+}
+.header .inner-header .nav .gnb>ul>li ul.sub>li a{
+  color: #fff;
+}
+.header .inner-header .nav .gnb>ul>li:hover ul.sub {
+  display: block;
+}
